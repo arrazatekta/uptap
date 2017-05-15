@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+           
+
+           
+   <link rel="stylesheet" href="jquery.mobile-1.0.min.css" />
+   <script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+   <script type="text/javascript" src="jquery.mobile-1.0.min.js"></script>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="menu_desplegable.css">
+  <center> <img src="chiapasnosune1.jpg" width="100" heigt="100"/></center> 
+    <title>Blank Standard HTML5 Web App Template</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style>
+        /* following two viewport lines are equivalent to meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+    </style>
+
+    <!-- Uncomment the following scripts if you convert your "Standard HTML5" project into a "Cordova" project. -->
+    <!-- <script src="cordova.js"></script> -->          <!-- phantom library, needed for Cordova api calls, added during build -->
+    <!-- <script src="js/app.js"></script> -->           <!-- recommended location of your JavaScript code relative to other JS files -->
+    <!-- <script src="xdk/init-dev.js"></script> -->     <!-- normalizes device and document ready events, see README for details -->
+    
+    
+    
+    
+</head>
+
+<body>
+   <div data-role="page">
+                <div data-role="header" data-theme="b">
+                    <h1>Elementos Collaspsible</h1>
+                </div>
+                <div data-role="content">
+                    <div data-role="collapsible">
+                        <h3>Elemento Collapsible simple</h3>
+                        <p>Este es el contenido del collapsible el cual podemos ocultar</p>
+                    </div>
+                    
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>Elemento Collapsible abierto</h3>
+                        <p>Este es el contenido del collapsible el cual podemos ocultar</p>
+                        <a href="#" data-role="button" data-inline="true">hola</a>
+                    </div>
+                    
+                    <div data-role="collapsible" data-theme="a" data-content-theme="e">
+                        <h3>Encabezado con tema A</h3>
+                        <p>El contenido tiene el tema e</p>
+                        <div data-role="collapsible" data-content-theme="a">
+                            <h3>Collapsible dentro de otro</h3>
+                            <p>En este caso vemos que este esta dentro de otro</p>
+                        </div>
+                    </div>
+                    
+                   <div data-role="collapsible-set" data-theme="e" data-content-theme="a">
+                    <div data-role="collapsible">
+                        <h3>Primer elemento del acordeon</h3>
+                        <p>Ahora estamos viendo el lemento tres del acordeon</p>
+                    </div>
+                    
+                    <div data-role="collapsible" >
+                        <h3>Segundo elemento del acordeon</h3>
+                        <p>Ahora estamos viendo el lemento tres del acordeon</p>
+                        
+                    </div>
+                    
+                    <div data-role="collapsible" data-theme="a" data-content-theme="b">
+                        <h3>Tercer elemento del acordeon con tema diferente</h3>
+                        <p>Ahora estamos viendo el lemento tres del acordeon tambien tiene contenido con otro tema</p>
+                        
+                    </div>
+                  </div>                    
+                </div>
+                <div data-role="footer">
+                    <h3> Elementos Collaspsible</h3>
+                </div>
+            </div>
+</body>
+</html>
