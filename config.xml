@@ -9,7 +9,7 @@
 <name>Uptapachula</name>
 		
 		
-		<icon src="logo_upt.jpg" platform="android" width="57" height="57" density="mdpi" />
+		<icon src="logo_upt.jpg" platform="android" width="57" height="57" density="hdpi" />
 
 
 </widget>
